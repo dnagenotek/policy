@@ -116,23 +116,15 @@
         
           <h1 id="introduction">Introduction</h1>
 
-<p>DNA Genotek Inc (&ldquo;DNA Genotek&rdquo;) is committed to ensuring the confidentiality, privacy, integrity, and availability of all electronic protected health information (ePHI) it receives, maintains, processes and/or transmits on behalf of its Customers. As providers of compliant, hosted infrastructure used by health technology vendors, developers, designers, agencies, custom development shops, and enterprises, DNA Genotek strives to maintain compliance, proactively address information security, mitigate risk for its Customers, and assure known breaches are completely and effectively communicated in a timely manner. The following documents address core policies used by DNA Genotek to maintain compliance and assure the proper protections of infrastructure used to store, process, and transmit ePHI for DNA Genotek Customers.</p>
+<p>DNA Genotek Inc (&ldquo;DNA Genotek&rdquo;) is committed to ensuring the confidentiality, privacy, integrity, and availability of all electronic protected health information (ePHI) it receives, maintains, processes and/or transmits on behalf of its Customers. As providers of compliant, hosted software as a service used by health technology businesses and academic researchers, DNA Genotek strives to maintain compliance, proactively address information security, mitigate risk for its Customers, and assure known breaches are completely and effectively communicated in a timely manner. The following documents address core policies used by DNA Genotek to maintain compliance and assure the proper protections of infrastructure used to store, process, and transmit ePHI for DNA Genotek Customers.</p>
 
-<p>DNA Genotek provides secure and compliant cloud-based software. This hosted software falls into two broad categories: 1) <strong>Platform as a Service (Paas)</strong> and 2) <strong>Platform Add-ons</strong>. These Categories are cited throughout polices as Customers in each category inherit different policies, procedures, and obligations from DNA Genotek.</p>
-
-<h2 id="platform-as-a-service-paas">Platform as a Service (PaaS)</h2>
-
-<p>PaaS Customers utilize hosted software and infrastructure from DNA Genotek to deploy, host, and scale custom developed applications and configured databases. These customers are deployed into compliant containers run on systems secured and managed by DNA Genotek. DNA Genotek does not have insight or access into application level data of PaaS Customers and, as such, does not have the ability to secure or manage risk associated with application level vulnerabilities and security weaknesses. DNA Genotek makes every effort to reduce the risk of unauthorized disclosure, access, and/or breach of PaaS Customer data through network (firewalls, dedicated IP spaces, etc) and server settings (encryption at rest and in transit, OSSEC throughout the Platform, etc).</p>
+<p>DNA Genotek provides secure and compliant cloud-based software. PaaS Customers utilize hosted software and infrastructure from DNA Genotek to deploy, host, and scale custom developed applications and configured databases. These customers are deployed into compliant containers run on systems secured and managed by DNA Genotek. DNA Genotek does not have insight or access into application level data of PaaS Customers and, as such, does not have the ability to secure or manage risk associated with application level vulnerabilities and security weaknesses. DNA Genotek makes every effort to reduce the risk of unauthorized disclosure, access, and/or breach of PaaS Customer data through network (firewalls, dedicated IP spaces, etc) and server settings (encryption at rest and in transit, OSSEC throughout the Platform, etc).</p>
 
 <p>PaaS Customers can opt for a list of Services from DNA Genotek, which include Backup Service, Logging Service, IDS Service, and Disaster Recovery Service. These services are not standard and PaaS Customers must sign up for them in order for DNA Genotek to manage these areas of security and compliance.</p>
 
-<h2 id="platform-add-ons">Platform Add-ons</h2>
-
-<p>Add-ons are compliant API-driven services that are offered as part of the DNA Genotek Platform. These services currently include our Backend as a Service and secure Messaging Service. With Add-ons, DNA Genotek has access to data models and manages all application level configurations and security.</p>
-
-<p>In the future there may be 3rd party Add-on services available as part of the DNA Genotek Platform. These 3rd party, or Partner, Services will be fully reviewed by DNA Genotek to assure they do not have a negative impact on DNA Genotek&rsquo;s information security and compliance posture.</p>
-
 <h2 id="compliance-inheritance">Compliance Inheritance</h2>
+
+<p><strong><em>TODO</em></strong></p>
 
 <p>DNA Genotek provides compliant hosted software infrastructure for its Customers. DNA Genotek has been through a HIPAA compliance audit by a national, 3rd party compliance firm, to validate and map organizational policies and technical settings to HIPAA rules. DNA Genotek, as a company, and its technology, is HITRUST Certified.  DNA Genotek&rsquo;s infrastructure at Rackspace is HITRUST Certified and certification for AWS, Azure, and SoftLayer are in progress.</p>
 
@@ -142,378 +134,36 @@
 
 <p>Below are mappings of HIPAA Rules to DNA Genotek controls and a mapping of what Rules are inherited by Customers, both Platform Customers and Add-on Customers.</p>
 
+<p><strong><em>END TODO</em></strong></p>
+
 <h2 id="dna-genotek-organizational-concepts">DNA Genotek Organizational Concepts</h2>
 
-<p>The physical infrastructure environment is hosted at <a href="http://broadcast.rackspace.com/downloads/pdfs/RackspaceSecurityApproach.pdf">Rackspace</a>, <a href="https://aws.amazon.com/">Amazon Web Services</a> (AWS), <a href="https://azure.microsoft.com/">Microsoft Azure</a>, and <a href="http://www.softlayer.com/">IBM SoftLayer</a>. The network components and supporting network infrastructure are contained within the Rackspace, AWS, Azure, and SoftLayer infrastructures and managed by Rackspace, AWS, Microsoft, and IBM (respectively). DNA Genotek does not have physical access into the network components. The DNA Genotek environment consists of Cisco firewalls; nginx web servers; Java, Python, and Go application servers; Percona and PostgreSQL database servers; Logstash logging servers; Linux Ubuntu monitoring servers; Windows Server virtual machines; Chef and Salt configuration management servers; OSSEC IDS services; Docker containers; and developer tool servers running on Linux Ubuntu.</p>
+<p>The physical infrastructure environment is hosted at <a href="https://hivelocity.net">Hivelocity</a> and <a href="https://aws.amazon.com/">Amazon Web Services</a> (AWS). The network components and supporting network infrastructure are contained within the Hivelocity and AWS infrastructures and managed by Hivelocity and AWS (respectively). DNA Genotek does not have physical access into the network components. The DNA Genotek environment consists of Juniper firewalls; nginx web servers; Python application servers; PostgreSQL database servers; Logstash logging servers; Linux Ubuntu monitoring servers; Ansible configuration management services; OSSEC IDS services; Docker containers; and developer tool servers running on Linux Ubuntu.</p>
 
-<p>Within the DNA Genotek Platform on Rackspace, AWS, Azure, and SoftLayer, all data transmission is encrypted and all hard drives are encrypted so data at rest is also encrypted; this applies to all servers - those hosting Docker containers, databases, APIs, log servers, etc. DNA Genotek assumes all data <em>may</em> contain ePHI, even though our Risk Assessment does not indicate this is the case, and provides appropriate protections based on that assumption.</p>
+<p>Within the DNA Genotek Platform on Hivelocity and AWS, all data transmission is encrypted and all hard drives are encrypted so data at rest is also encrypted; this applies to all servers - those hosting Docker containers, databases, APIs, log servers, etc. DNA Genotek assumes all data <em>may</em> contain ePHI, even though our Risk Assessment does not indicate this is the case, and provides appropriate protections based on that assumption.</p>
 
-<p>In the case of PaaS Customers, it is the responsibility of the Customer to restrict, secure, and assure the privacy of all ePHI data at the Application Level, as this is not under the control or purview of DNA Genotek.</p>
+<p>It is the responsibility of the Customer to restrict, secure, and assure the privacy of all ePHI data outside of the Application, as this is not under the control or purview of DNA Genotek.</p>
 
 <p>The data and network segmentation mechanism differs depending on the primitives offered by the underlying cloud provider infrastructure:</p>
 
-<ul>
-<li>Within Rackspace, hosted load balancers segment data and traffic while Cisco firewalls route traffic to private subnets for PaaS Customers and for Platform Add-ons.</li>
-<li>Within AWS, hosted load balancers segment data across dedicated Virtual Private Clouds for PaaS Customers and for Platform Add-ons.</li>
-<li>Within Azure, hosted load balancers segment data across dedicated Virtual Networks for PaaS Customers and for Platform Add-ons.</li>
-<li>Within SoftLayer, hosted load balancers segment data across dedicated Private Networks for PaaS Customers and for Platform Add-ons.</li>
-</ul>
+<p><strong><em>TODO</em></strong>
+* Within Hivelocity, Juniper firewalls route traffic to private subnets for SaaS Customers
+* Within AWS, hosted load balancers segment data across dedicated Virtual Private Clouds for PaaS Customers and for Platform Add-ons.</p>
 
-<p>The result of segmentation strategies employed by DNA Genotek effectively create RFC 1918, or dedicated, private segmented and separated networks and IP spaces, for each PaaS Customer and for Platform Add-ons.</p>
+<p>The result of segmentation strategies employed by DNA Genotek effectively create RFC 1918, or dedicated, private segmented and separated networks and IP spaces, for each PaaS Customer and for Platform Add-ons.
+<strong><em>END TODO</em></strong></p>
 
 <p>Additionally, IPtables is used on each each server for logical segmentation. IPtables is configured to restrict access to only justified ports and protocols. DNA Genotek has implemented strict logical access controls so that only authorized personnel are given access to the internal management servers. The environment is configured so that data is transmitted from the load balancers to the application servers over an SSL encrypted session.</p>
 
-<p>In the case of Platform Add-ons, once the data is received from the application server, a series of Application Programming Interface (API) calls is made to the database servers where the ePHI resides. The ePHI is separated into PostgreSQL and Percona databases through programming logic built, so that access to one database server will not present you with the full ePHI spectrum.</p>
+<p>Once the data is received from the application server, a series of Application Programming Interface (API) calls is made to the database servers where the ePHI resides. The ePHI is separated within PostgreSQL databases through programming logic built, so that access to one database server will not present you with the full ePHI spectrum.</p>
 
 <p>The bastion host, nginx web server, and application servers are externally facing and accessible via the Internet. The database servers, where the ePHI resides, are located on the internal DNA Genotek network and can only be accessed directly over an SSH connection through the bastion host. The access to the internal database is restricted to a limited number of personnel and strictly controlled to only those personnel with a business justified reason. Remote access to the internal servers is not accessible except through the load balancers and bastion host.</p>
 
-<p>All Platform Add-ons and operating systems are tested end-to-end for usability, security and impact prior to deployment to production.</p>
+<p>All SaaS and operating systems are tested end-to-end for usability, security and impact prior to deployment to production.</p>
 
 <h2 id="version-control">Version Control</h2>
 
-<p>Policies were last updated May 10th, 2016.</p>
-
-          <h1 id="hipaa-inheritance-for-paas-customers">HIPAA Inheritance for PaaS Customers</h1>
-
-<table><thead>
-<tr>
-<th><strong>Administrative Controls</strong> HIPAA Rule</th>
-<th>DNA Genotek Control</th>
-<th>Inherited</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Security Management Process - 164.308(a)(1)(i)</td>
-<td>Risk Management Policy</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Assigned Security Responsibility - 164.308(a)(2)</td>
-<td>Roles Policy</td>
-<td>Partially</td>
-</tr>
-<tr>
-<td>Workforce Security - 164.308(a)(3)(i)</td>
-<td>Employee Policies</td>
-<td>Partially</td>
-</tr>
-<tr>
-<td>Information Access Management - 164.308(a)(4)(i)</td>
-<td>System Access Policy</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Security Awareness and Training - 164.308(a)(5)(i)</td>
-<td>Employee Policy</td>
-<td>No</td>
-</tr>
-<tr>
-<td>Security Incident Procedures - 164.308(a)(6)(i)</td>
-<td>IDS Policy</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Contingency Plan - 164.308(a)(7)(i)</td>
-<td>Disaster Recovery Policy</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Evaluation - 164.308(a)(8)</td>
-<td>Auditing Policy</td>
-<td>Yes</td>
-</tr>
-</tbody></table>
-
-<table><thead>
-<tr>
-<th><strong>Physical Safeguards</strong> HIPAA Rule</th>
-<th>DNA Genotek Control</th>
-<th>Inherited</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Facility Access Controls - 164.310(a)(1)</td>
-<td>Facility and Disaster Recovery Policies</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Workstation Use - 164.310(b)</td>
-<td>System Access, Approved Tools, and Employee Policies</td>
-<td>Partially</td>
-</tr>
-<tr>
-<td>Workstation Security - 164.310(&lsquo;c&rsquo;)</td>
-<td>System Access, Approved Tools, and Employee Policies</td>
-<td>Partially</td>
-</tr>
-<tr>
-<td>Device and Media Controls - 164.310(d)(1)</td>
-<td>Disposable Media and Data Management Policies</td>
-<td>Yes</td>
-</tr>
-</tbody></table>
-
-<table><thead>
-<tr>
-<th><strong>Technical Safeguards</strong> HIPAA Rule</th>
-<th>DNA Genotek Control</th>
-<th>Inherited</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Access Control - 164.312(a)(1)</td>
-<td>System Access Policy</td>
-<td>Partially</td>
-</tr>
-<tr>
-<td>Audit Controls - 164.312(b)</td>
-<td>Auditing Policy</td>
-<td>Yes (optional)</td>
-</tr>
-<tr>
-<td>Integrity - 164.312(&#39;c&rsquo;)(1)</td>
-<td>System Access, Auditing, and IDS Policies</td>
-<td>Yes (optional)</td>
-</tr>
-<tr>
-<td>Person or Entity Authentication - 164.312(d)</td>
-<td>System Access Policy</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Transmission Security - 164.312(e)(1)</td>
-<td>System Access and Data Management Policy</td>
-<td>Yes</td>
-</tr>
-</tbody></table>
-
-<table><thead>
-<tr>
-<th><strong>Organizational Requirements</strong> HIPAA Rule</th>
-<th>DNA Genotek Control</th>
-<th>Inherited</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Business Associate Contracts or Other Arrangements - 164.314(a)(1)(i)</td>
-<td>Business Associate Agreements and 3rd Parties Policies</td>
-<td>Partially</td>
-</tr>
-</tbody></table>
-
-<table><thead>
-<tr>
-<th><strong>Policies and Procedures and Documentation Requirements</strong> HIPAA Rule</th>
-<th>DNA Genotek Control</th>
-<th>Inherited</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Policies and Procedures - 164.316(a)</td>
-<td>Policy Management Policy</td>
-<td>Partially</td>
-</tr>
-<tr>
-<td>Documentation - 164.316(b)(1)(i)</td>
-<td>Policy Management Policy</td>
-<td>Partially</td>
-</tr>
-</tbody></table>
-
-<table><thead>
-<tr>
-<th><strong>HITECH Act - Security Provisions</strong> HIPAA Rule</th>
-<th>DNA Genotek Control</th>
-<th>Inherited</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Notification in the Case of Breach - 13402(a) and (b)</td>
-<td>Breach Policy</td>
-<td>Partially</td>
-</tr>
-<tr>
-<td>Timelines of Notification - 13402(d)(1)</td>
-<td>Breach Policy</td>
-<td>Partially</td>
-</tr>
-<tr>
-<td>Content of Notification - 13402(f)(1)</td>
-<td>Breach Policy</td>
-<td>Partially</td>
-</tr>
-</tbody></table>
-
-          <h1 id="hipaa-inheritance-for-platform-add-on-customers">HIPAA Inheritance for Platform Add-on Customers</h1>
-
-<table><thead>
-<tr>
-<th><strong>Administrative Controls</strong> HIPAA Rule</th>
-<th>DNA Genotek Control</th>
-<th>Inherited</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Security Management Process - 164.308(a)(1)(i)</td>
-<td>Risk Management Policy</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Assigned Security Responsibility - 164.308(a)(2)</td>
-<td>Roles Policy</td>
-<td>Partially</td>
-</tr>
-<tr>
-<td>Workforce Security - 164.308(a)(3)(i)</td>
-<td>Employee Policies</td>
-<td>Partially</td>
-</tr>
-<tr>
-<td>Information Access Management - 164.308(a)(4)(i)</td>
-<td>System Access Policy</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Security Awareness and Training - 164.308(a)(5)(i)</td>
-<td>Employee Policy</td>
-<td>No</td>
-</tr>
-<tr>
-<td>Security Incident Procedures - 164.308(a)(6)(i)</td>
-<td>IDS Policy</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Contingency Plan - 164.308(a)(7)(i)</td>
-<td>Disaster Recovery Policy</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Evaluation - 164.308(a)(8)</td>
-<td>Auditing Policy</td>
-<td>Yes</td>
-</tr>
-</tbody></table>
-
-<table><thead>
-<tr>
-<th><strong>Physical Safeguards</strong> HIPAA Rule</th>
-<th>DNA Genotek Control</th>
-<th>Inherited</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Facility Access Controls - 164.310(a)(1)</td>
-<td>Facility and Disaster Recovery Policies</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Workstation Use - 164.310(b)</td>
-<td>System Access, Approved Tools, and Employee Policies</td>
-<td>Partially</td>
-</tr>
-<tr>
-<td>Workstation Security - 164.310(&lsquo;c&rsquo;)</td>
-<td>System Access, Approved Tools, and Employee Policies</td>
-<td>Partially</td>
-</tr>
-<tr>
-<td>Device and Media Controls - 164.310(d)(1)</td>
-<td>Disposable Media and Data Management Policies</td>
-<td>Yes</td>
-</tr>
-</tbody></table>
-
-<table><thead>
-<tr>
-<th><strong>Technical Safeguards</strong> HIPAA Rule</th>
-<th>DNA Genotek Control</th>
-<th>Inherited</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Access Control - 164.312(a)(1)</td>
-<td>System Access Policy</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Audit Controls - 164.312(b)</td>
-<td>Auditing Policy</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Integrity - 164.312(&#39;c&rsquo;)(1)</td>
-<td>System Access, Auditing, and IDS Policies</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Person or Entity Authentication - 164.312(d)</td>
-<td>System Access Policy</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Transmission Security - 164.312(e)(1)</td>
-<td>System Access and Data Management Policy</td>
-<td>Yes</td>
-</tr>
-</tbody></table>
-
-<table><thead>
-<tr>
-<th><strong>Organizational Requirements</strong> HIPAA Rule</th>
-<th>DNA Genotek Control</th>
-<th>Inherited</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Business Associate Contracts or Other Arrangements - 164.314(a)(1)(i)</td>
-<td>Business Associate Agreements and 3rd Parties Policies</td>
-<td>Partially</td>
-</tr>
-</tbody></table>
-
-<table><thead>
-<tr>
-<th><strong>Policies and Procedures and Documentation Requirements</strong> HIPAA Rule</th>
-<th>DNA Genotek Control</th>
-<th>Inherited</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Policies and Procedures - 164.316(a)</td>
-<td>Policy Management Policy</td>
-<td>Partially</td>
-</tr>
-<tr>
-<td>Documentation - 164.316(b)(1)(i)</td>
-<td>Policy Management Policy</td>
-<td>Partially</td>
-</tr>
-</tbody></table>
-
-<table><thead>
-<tr>
-<th><strong>HITECH Act - Security Provisions</strong> HIPAA Rule</th>
-<th>DNA Genotek Control</th>
-<th>Inherited</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Notification in the Case of Breach - 13402(a) and (b)</td>
-<td>Breach Policy</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Timelines of Notification - 13402(d)(1)</td>
-<td>Breach Policy</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Content of Notification - 13402(f)(1)</td>
-<td>Breach Policy</td>
-<td>Yes</td>
-</tr>
-</tbody></table>
+<p>Policies were last updated February 21, 2017.</p>
 
           <h1 id="policy-management-policy">Policy Management Policy</h1>
 
@@ -580,7 +230,7 @@
 <h2 id="risk-management-policies">Risk Management Policies</h2>
 
 <ol>
-<li>It is the policy of DNA Genotek to conduct thorough and timely risk assessments of the potential threats and vulnerabilities to the confidentiality, integrity, and availability of electronic protected health information (ePHI) (and other confidential and proprietary electronic information) it stores, transmits, and/or processes for its Customers and to develop strategies to efficiently and effectively mitigate the risks identified in the assessment process as an integral part of the DNA Genotek&rsquo;s information security program.</li>
+<li>It is the policy of DNA Genotek to conduct thorough and timely risk assessments of the potential threats and vulnerabilities to the confidentiality, integrity, and availability of electronic protected health information (ePHI) (and other confidential and proprietary electronic information) it stores, transmits, and/or processes for its Customers and to develop strategies to efficiently and effectively mitigate the risks identified in the assessment process as an integral part of DNA Genotek&rsquo;s information security program.</li>
 <li>Risk analysis and risk management are recognized as important components of DNA Genotek’s corporate compliance program and information security program in accordance with the Risk Analysis and Risk Management implementation specifications within the Security Management standard and the evaluation standards set forth in the HIPAA Security Rule, 45 CFR 164.308(a)(1)(ii)(A), 164.308(a)(1)(ii)(B), 164.308(a)(1)(i), and 164.308(a)(8).
 
 <ol>
@@ -778,17 +428,17 @@
 
 <h2 id="workforce-training-responsibilities">Workforce Training Responsibilities</h2>
 
-<ol>
-<li><p>The Privacy Officer facilitates the training of all workforce members as follows:</p>
+<p><strong><em>TODO</em></strong>
+1. The Privacy Officer facilitates the training of all workforce members as follows:
+    1. New workforce members within their first month of employment;
+    2. Existing workforce members annually;
+    3. Existing workforce members whose functions are affected by a material change in the policies and procedures, within a month after the material change becomes effective;
+    4. Existing workforce members as needed due to changes in security and risk posture of DNA Genotek.
+<strong><em>END TODO</em></strong>
+2. The Security Officer or designee maintains documentation of the training session materials and attendees for a minimum of six years.</p>
 
 <ol>
-<li>New workforce members within their first month of employment;</li>
-<li>Existing workforce members annually;</li>
-<li>Existing workforce members whose functions are affected by a material change in the policies and procedures, within a month after the material change becomes effective;</li>
-<li>Existing workforce members as needed due to changes in security and risk posture of DNA Genotek.</li>
-</ol></li>
-<li><p>The Security Officer or designee maintains documentation of the training session materials and attendees for a minimum of six years.</p></li>
-<li><p>The training session focuses on, but is not limited to, the following subjects defined in DNA Genotek&rsquo;s security policies and procedures:</p>
+<li>The training session focuses on, but is not limited to, the following subjects defined in DNA Genotek&rsquo;s security policies and procedures:
 
 <ol>
 <li>HIPAA Privacy, Security, and Breach notification rules;</li>
@@ -808,7 +458,7 @@
 <li>Requirements for users to create and change passwords;</li>
 <li>Users must set all applications that contain or transmit ePHI to automatically log off after “X” minutes of inactivity;</li>
 <li>Supervisors are required to report terminations of workforce members and other outside users;</li>
-<li>Supervisors are required to report a change in a users title, role, department, and/or location;</li>
+<li>Supervisors are required to report a change in a user&rsquo;s title, role, department, and/or location;</li>
 <li>Procedures to backup ePHI;</li>
 <li>Procedures to move and record movement of hardware and electronic media containing ePHI;</li>
 <li>Procedures to dispose of discs, CDs, hard drives, and other media containing ePHI;</li>
@@ -821,7 +471,7 @@
 
 <p>The Security Officer is responsible for facilitating the training and supervision of all workforce members [164.308(a)(3)(ii)(A) and 164.308(a)(5)(ii)(A)], investigation and sanctioning of any workforce member that is in violation of DNA Genotek security policies and non-compliance with the security regulations [164.308(a)(1)(ii)&copy;], and writing, implementing, and maintaining all polices, procedures, and documentation related to efforts toward security and compliance [164.316(a-b)].</p>
 
-<p>The current DNA Genotek Security Officer is Adam Leko (<a href="mailto:adam@datica.com">adam@datica.com</a>).</p>
+<p>The current DNA Genotek Security Officer is <strong><em>TODO</em></strong>.</p>
 
 <h2 id="organizational-responsibilities">Organizational Responsibilities</h2>
 
@@ -899,9 +549,9 @@
 
           <h1 id="data-management-policy">Data Management Policy</h1>
 
-<p>DNA Genotek has procedures to create and maintain retrievable exact copies of electronic protected health information (ePHI) stored in conjunction with DNA Genotek Add-ons and for PaaS Customers utilizing our Backup Service. This policy, and associated procedures for testing and restoring from backup data, do not apply to PaaS Customers that do not choose DNA Genotek Backup Service. The policy and procedures will assure that complete, accurate, retrievable, and tested backups are available for all systems used by DNA Genotek.</p>
+<p>DNA Genotek has procedures to create and maintain retrievable exact copies of electronic protected health information (ePHI) stored in conjunction with DNA Genotek SaaS Customers.</p>
 
-<p>Data backup is an important part of the day-to-day operations of DNA Genotek. To protect the confidentiality, integrity, and availability of ePHI, both for DNA Genotek and DNA Genotek Customers, completes backups are done daily to assure that data remains available when it needed and in case of disaster.</p>
+<p>Data backup is an important part of the day-to-day operations of DNA Genotek. To protect the confidentiality, integrity, and availability of ePHI, both for DNA Genotek and DNA Genotek Customers, complete backups are done daily to assure that data remains available when it needed and in case of disaster.</p>
 
 <p>Violation of this policy and its procedures by workforce members may result in corrective disciplinary action, up to and including termination of employment.</p>
 
@@ -922,8 +572,8 @@
 <h2 id="backup-policy-and-procedures">Backup Policy and Procedures</h2>
 
 <ol>
-<li>Perform daily snapshot backups of all systems that process, store, or transmit ePHI for DNA Genotek Customers, including PaaS Customers that utilize the DNA Genotek Backup Service</li>
-<li>DNA Genotek Ops Team, lead by VP of Engineering, is designated to be in charge of backups.</li>
+<li>Perform daily snapshot backups of all systems that process, store, or transmit ePHI for DNA Genotek Customers</li>
+<li>DNA Genotek Ops Team, lead by Director of IT, is designated to be in charge of backups.</li>
 <li>Dev Ops Team members are trained and assigned assigned to complete backups and manage the backup media.</li>
 <li>Document backups
 
@@ -974,10 +624,10 @@
 <h2 id="access-establishment-and-modification">Access Establishment and Modification</h2>
 
 <ul>
-<li>Requests for access to DNA Genotek Platform systems and applications is made formally to the VP of Engineering, Privacy Officer, or Security Officer.</li>
+<li>Requests for access to DNA Genotek Platform systems and applications is made formally to the Director of IT, Privacy Officer, or Security Officer.</li>
 <li>Access is not granted until receipt, review, and approval by the DNA Genotek Security Officer;</li>
 <li>The request for access is retained for future reference.</li>
-<li>All access to DNA Genotek systems and services are reviewed and updated on an bi-annual basis to assure proper authorizations are in place commensurate with job functions. The form used to conduct account review is <a href="https://docs.google.com/a/catalyze.io/forms/d/1oeejMta4XLiUsdH2gTKQ-glec6DBiwPJoY9F60HmPWk/viewform">here</a>.</li>
+<li>All access to DNA Genotek systems and services are reviewed and updated on a bi-annual basis to assure proper authorizations are in place commensurate with job functions. The form used to conduct account review is <a href="https://docs.google.com/a/catalyze.io/forms/d/1oeejMta4XLiUsdH2gTKQ-glec6DBiwPJoY9F60HmPWk/viewform">here</a>.</li>
 <li>Any DNA Genotek workforce member can request change of access using this <a href="https://docs.google.com/a/catalyze.io/forms/d/1ySICzCyEEdNqxHHErjlJqREBijwxs9z72L-rWXrxkm0/viewform">form</a>.</li>
 <li>Access to systems is controlled using centralized user management and authentication. All authentication requests utilize two factor authentication using mobile devices as the second factor.</li>
 <li>Temporary accounts are not used unless absolutely necessary for business purposes.
@@ -1010,7 +660,7 @@
 <h2 id="access-authorization">Access Authorization</h2>
 
 <ul>
-<li>Role based access categories for each DNA Genotek system and application are pre-approved by the Security Officer or VP of Engineering.</li>
+<li>Role based access categories for each DNA Genotek system and application are pre-approved by the Security Officer or Director of IT.</li>
 <li>DNA Genotek utilizes hardware and software firewalls to segment data, prevent unauthorized access, and monitor traffic for denial of service attacks.</li>
 </ul>
 
@@ -1025,7 +675,7 @@
 
 <ul>
 <li>Access to the DNA Genotek Platform systems and applications is controlled by requiring unique User Login ID’s and passwords for each individual user and developer.</li>
-<li>Passwords requirements mandate strong password controls (see below).</li>
+<li>Password requirements mandate strong password controls (see below).</li>
 <li>Passwords are not displayed at any time and are not transmitted or stored in plain text.</li>
 <li>Default accounts on all production systems, including root, are disabled.</li>
 <li>Shared accounts are not allowed within DNA Genotek systems or networks.</li>
@@ -1041,7 +691,7 @@
 
 <h2 id="employee-workstation-use">Employee Workstation Use</h2>
 
-<p>All workstations at DNA Genotek are company owned, and all are laptop Apple products running Mac operating system.</p>
+<p>All workstations at DNA Genotek are company owned, and all are laptop Dell products running Windows operating system.</p>
 
 <ul>
 <li>Workstations may not be used to engage in any activity that is illegal or is in violation of organization’s policies.</li>
@@ -1050,9 +700,8 @@
 <li>Solicitation of non-company business, or any use of organization’s information systems/applications for personal gain is prohibited.</li>
 <li>Transmitted messages may not contain material that criticizes organization, its providers, its employees, or others.</li>
 <li>Users may not misrepresent, obscure, suppress, or replace another user’s identity in transmitted or stored messages.</li>
-<li>Workstation hard drives will be encrypted using FileVault 2.0.</li>
+<li>Workstation hard drives will be encrypted using <strong><em>TODO</em></strong>.</li>
 <li>All workstations have firewalls enabled to prevent unauthorized access unless explicitly granted.</li>
-<li>All workstations are to have the following messages added to the lock screen and login screen: <em>This computer is owned by DNA Genotek, Inc. By logging in, unlocking, and/or using this computer you acknowledge you have seen, and follow, these policies (https://policy.datica.com) and have completed this training (https://training.datica.com/). Please contact us if you have problems with this - privacy@datica.com.</em></li>
 </ul>
 
 <h2 id="wireless-access-use">Wireless Access Use</h2>
@@ -1065,8 +714,6 @@
 
 <ul>
 <li>All data in transit over wireless is encrypted using WPA2 encryption;</li>
-<li>SSIDs are not broadcast;</li>
-<li>Passwords are rotated on a regular basis, presently quarterly. This process is managed by the DNA Genotek Security Officer.</li>
 </ul></li>
 </ul>
 
@@ -1087,7 +734,9 @@
 
 <h2 id="paper-records">Paper Records</h2>
 
-<p>DNA Genotek does not use paper records for any sensitive information. Use of paper for recording and storing sensitive data is against DNA Genotek policies.</p>
+<p><strong><em>TODO</em></strong>
+DNA Genotek does not use paper records for any sensitive information. Use of paper for recording and storing sensitive data is against DNA Genotek policies.
+<strong><em>END TODO</em></strong></p>
 
 <h2 id="password-management">Password Management</h2>
 
@@ -1104,14 +753,6 @@
 <li>If a user believes their user ID has been compromised, they are required to immediately report the incident to the Security Office.</li>
 </ul>
 
-<h2 id="paas-customer-access-to-systems">PaaS Customer Access to Systems</h2>
-
-<p>DNA Genotek grants PaaS customer secure system access via VPN connections. This access is only to Customer-specific systems, no other systems in the environment. These connections are setup at customer deployment. These connections are secured and encrypted and the only method for customers to connect to DNA Genotek hosted systems.</p>
-
-<p>In the case of data migration, DNA Genotek does, on a case by case basis, support customers in importing data. In these cases DNA Genotek support SCP assuring all data is secured and encrypted in transit.</p>
-
-<p>In the case of an investigation, DNA Genotek will assist customers, at DNA Genotek&rsquo;s discretion, and law enforcement in forensics.</p>
-
           <h1 id="auditing-policy">Auditing Policy</h1>
 
 <p>DNA Genotek shall audit access and activity of electronic protected health information (ePHI) applications and systems in order to ensure compliance. The Security Rule requires healthcare organizations to implement reasonable hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use ePHI. Audit activities may be limited by application, system, and/or network auditing capabilities and resources. DNA Genotek shall make reasonable and good-faith efforts to safeguard information privacy and security through a well-thought-out approach to auditing that is consistent with available resources.</p>
@@ -1126,7 +767,7 @@
 <li>Out of date software and/or software known to have vulnerabilities.</li>
 </ul>
 
-<p>This policy applies to all DNA Genotek Add-on systems, including BaaS, that store, transmit, or process ePHI. This policy, and associated procedures, do not apply to PaaS Customers that do not choose DNA Genotek Logging Service.</p>
+<p>This policy applies to all DNA Genotek SaaS systems that store, transmit, or process ePHI.</p>
 
 <h2 id="applicable-standards-from-the-hitrust-common-security-framework">Applicable Standards from the HITRUST Common Security Framework</h2>
 
@@ -1163,7 +804,7 @@
 <li>Organize and provide oversight to a team structure charged with audit compliance activities (e.g., parameters, frequency, sample sizes, report formats, evaluation, follow-up, etc.).</li>
 <li>All connections to DNA Genotek are monitored. Access is limited to certain services, ports, and destinations. Exceptions to these rules, if created, are reviewed on an annual basis.</li>
 </ul></li>
-<li>DNA Genotek’s auditing processes shall address access and activity at the following levels listed below. In the case of PaaS Customers, Application and User level auditing is the responsibility of the Customer; DNA Genotek provides software to aggregate and view User and Application logs, but the log data collected is the responsibility of the PaaS Customer. Auditing processes may address date and time of each log-on attempt, date and time of each log-off attempt, devices used, functions performed, etc.
+<li>DNA Genotek’s auditing processes shall address access and activity at the following levels listed below. Auditing processes may address date and time of each log-on attempt, date and time of each log-off attempt, devices used, functions performed, etc.
 
 <ul>
 <li>User: User level audit trails generally monitor and log all commands directly initiated by the user, all identification and authentication attempts, and data and services accessed.</li>
@@ -1174,9 +815,8 @@
 <li>DNA Genotek shall log all incoming and outgoing traffic to into and out of its environment. This includes all successful and failed attempts at data access and editing. Data associated with this data will include origin, destination, time, and other relevant details that are available to DNA Genotek.</li>
 <li>DNA Genotek utilizes OSSEC to scan all systems for malicious and unauthorized software every 2 hours and at reboot of systems. Alerts from OSSEC are sent to Kibana, the centralized logging service that we use.</li>
 <li>DNA Genotek leverages process monitoring tools throughout its environment.</li>
-<li>DNA Genotek treats its Developer Portal as a Platform Add-on and, as such, it logs all activity associated with Developer Portal Access.</li>
 <li>DNA Genotek uses OSSEC to monitor the integrity of log files by utilizing OSSEC System Integrity Checking capabilities.</li>
-<li>DNA Genotek shall identify “trigger events” or criteria that raise awareness of questionable conditions of viewing of confidential information. The “events” may be applied to the entire DNA Genotek Platform or may be specific to a Customer, partner, business associate, Platform Add-on or application (See Listing of Potential Trigger Events below).</li>
+<li>DNA Genotek shall identify “trigger events” or criteria that raise awareness of questionable conditions of viewing of confidential information. The “events” may be applied to the entire DNA Genotek Platform or may be specific to a Customer, partner, business associate, or application (See Listing of Potential Trigger Events below).</li>
 <li>In addition to trigger events, DNA Genotek utilizes OSSEC log correlation functionality to proactively identify and enable alerts based on log data.</li>
 <li>Logs are reviewed weekly by Security Officer.</li>
 <li>DNA Genotek’s Security Officer and Privacy Officer are authorized to select and use auditing tools that are designed to detect network vulnerabilities and intrusions. Such tools are explicitly prohibited by others, including Customers and Partners, without the explicit authorization of the Security Officer. These tools may include, but are not limited to:
@@ -1202,11 +842,7 @@
 <li>Testing may be carried out internally or provided through an external third-party vendor. Whenever possible, a third party auditing vendor should not be providing the organization IT oversight services (e.g., vendors providing IT services should not be auditing their own services - separation of duties).</li>
 <li>Testing shall be done on a routine basis, currently monthly.</li>
 </ul></li>
-<li>Software patches and updates will be applied to all systems in a timely manner. In the case of routine updates, they will be applied after thorough testing. In the case of updates to correct known vulnerabilities, priority will be given to testing to speed the time to production. Critical security patches are applied within 30 days from testing and all security patches are applied within 90 days after testing.
-
-<ul>
-<li>In the case of PaaS Customers, updates to Application and Database versions are the responsibility of Customers, though DNA Genotek will, at it&rsquo;s own discretion, notify and recommend updates to customer systems.</li>
-</ul></li>
+<li>Software patches and updates will be applied to all systems in a timely manner. In the case of routine updates, they will be applied after thorough testing. In the case of updates to correct known vulnerabilities, priority will be given to testing to speed the time to production. Critical security patches are applied within 30 days from testing and all security patches are applied within 90 days after testing.</li>
 </ol>
 
 <h2 id="audit-requests">Audit Requests</h2>
@@ -1255,14 +891,13 @@
 <li>Audit logs shall be protected from unauthorized access or modification, so the information they contain will be made available only if needed to evaluate a security incident or for routine audit activities as outlined in this policy.</li>
 <li>All audit logs are encrypted in transit and at rest to control access to the content of the logs.</li>
 <li>Audit logs shall be stored on a separate system to minimize the impact auditing may have on the privacy system and to prevent access to audit trails by those with system administrator privileges. This is done to apply the security principle of “separation of duties” to protect audit trails from hackers.</li>
-<li>For PaaS Customers choosing to use DNA Genotek logging services, log data will be separated from the log data of other DNA Genotek Customers.</li>
 </ol>
 
 <h2 id="workforce-training-education-awareness-and-responsibilities">Workforce Training, Education, Awareness and Responsibilities</h2>
 
 <ol>
 <li>DNA Genotek workforce members are provided training, education, and awareness on safeguarding the privacy and security of business and ePHI. DNA Genotek’s commitment to auditing access and activity of the information applications, systems, and networks is communicated through new employee orientation, ongoing training opportunities and events, and applicable policies. DNA Genotek workforce members are made aware of responsibilities with regard to privacy and security of information as well as applicable sanctions/corrective disciplinary actions should the auditing process detect a workforce member’s failure to comply with organizational policies.</li>
-<li>DNA Genotek Customers are provided with necessary information to understand DNA Genotek auditing capabilities, and PaaS Customers can choose the level of logging and auditing that DNA Genotek will implement on their behalf.</li>
+<li>DNA Genotek Customers are provided with necessary information to understand DNA Genotek auditing capabilities.</li>
 </ol>
 
 <h2 id="external-audits-of-information-access-and-activity">External Audits of Information Access and Activity</h2>
@@ -1288,7 +923,6 @@ A. Organizational history and experience.
 B. Available storage space.</li>
 <li>Reports summarizing audit activities shall be retained for a period of six years.</li>
 <li>Log data is currently retained and readily accessible for a 1-month period. Beyond that, log data is available via cold backup.</li>
-<li>For Paas Customers, they choose the length of backup retention and availability that DNA Genotek will implement and enforce.</li>
 </ol>
 
 <h2 id="potential-trigger-events">Potential Trigger Events</h2>
@@ -1306,7 +940,7 @@ B. Available storage space.</li>
 
           <h1 id="configuration-management-policy">Configuration Management Policy</h1>
 
-<p>DNA Genotek standardizes and automates configuration management through the use of Chef/Salt scripts as well as documentation of all changes to production systems and networks. Chef and Salt automatically configure all DNA Genotek systems according to established and tested policies, and are used as part of our Disaster Recovery plan and process.</p>
+<p>DNA Genotek standardizes and automates configuration management through the use of Ansible scripts as well as documentation of all changes to production systems and networks. Ansible automatically configures all DNA Genotek systems according to established and tested policies, and are used as part of our Disaster Recovery plan and process.</p>
 
 <h2 id="applicable-standards-from-the-hitrust-common-security-framework">Applicable Standards from the HITRUST Common Security Framework</h2>
 
@@ -1323,20 +957,20 @@ B. Available storage space.</li>
 <h2 id="configuration-management">Configuration Management</h2>
 
 <ol>
-<li>Chef and Salt are used to standardize and automate configuration management.</li>
+<li>Ansible is used to standardize and automate configuration management.</li>
 <li>OSSEC is used to scan systems every 2 hours and on reboot. These scans capture file system changes and also unauthorized or malicious software.</li>
 <li>No systems are deployed into DNA Genotek environments without approval of the DNA Genotek CTO.</li>
-<li>All changes to production systems, network devices, and firewalls are approved by the DNA Genotek CTO before they are implemented to assure they comply with business and security requirements. Additionally, all changes are tested before they are implemented in production. All changes are documented using issues filed in the &ldquo;Deployment Ticket&rdquo; JIRA project. Implementation of approved changes are only performed by authorized personnel.</li>
+<li>All changes to production systems, network devices, and firewalls are approved by the DNA Genotek CTO before they are implemented to assure they comply with business and security requirements. Additionally, all changes are tested before they are implemented in production. All changes are documented using issues filed in the &ldquo;HIPAA Compliance&rdquo; Basecamp project. Implementation of approved changes are only performed by authorized personnel.</li>
 <li>An up-to-date inventory of systems is maintained using Google spreadsheets and architecture diagrams hosted on Google Apps and Box. All systems are categorized as production and utility to differentiate based on criticality.</li>
 <li>Clocks are synchronized across all systems using NTP. Modifying time data on systems is restricted.</li>
 <li>All front end functionality (developer dashboards and portals) is separated from backend (database and app servers) systems by being deployed on separate servers.</li>
 <li>All software and systems are tested using unit tests and end to end tests.</li>
 <li>All committed code is reviewed using pull requests (on Github) to assure software code quality and proactively detect potential security issues in development.</li>
 <li>DNA Genotek utilizes development and staging environments that mirror production to assure proper function.</li>
-<li>DNA Genotek also deploys environments locally using Vagrant to assure functionality before moving to staging or production.</li>
+<li>DNA Genotek also deploys environments locally using Docker to assure functionality before moving to staging or production.</li>
 <li>DNA Genotek schedules production deployments every four weeks.</li>
 <li>All formal change requests require unique ID and authentication.</li>
-<li>Virus scanning software is run on all production hosts for anti-virus protection. Hosts are scanned daily for malicious binaries in critical system paths. The malware signature database is checked hourly and automatically updated if new signatures are available. Enabling anti-virus protection is a part of our Chef- and Salt-based configuration management baseline; this assures all hosts have anti-virus tools running on them.</li>
+<li>Virus scanning software is run on all production hosts for anti-virus protection. Hosts are scanned daily for malicious binaries in critical system paths. The malware signature database is checked hourly and automatically updated if new signatures are available. Enabling anti-virus protection is a part of our Ansible-based configuration management baseline; this assures all hosts have anti-virus tools running on them.</li>
 <li>All physical media is encrypted at provisioning. To verify encryption is consistent and in place for all production storage, checks are performed on a quarterly basis.</li>
 </ol>
 
@@ -1344,7 +978,7 @@ B. Available storage space.</li>
 
 <p>DNA Genotek works with Subcontractors to assure restriction of physical access to systems used as part of the DNA Genotek Platform. DNA Genotek and its Subcontractors control access to the physical buildings/facilities that house these systems/applications, or in which DNA Genotek workforce members operate, in accordance to the HIPAA Security Rule 164.310 and its implementation specifications. Physical Access to all of DNA Genotek facilities is limited to only those authorized in this policy. In an effort to safeguard ePHi from unauthorized access, tampering, and theft, access is allowed to areas only to those persons authorized to be in them and with escorts for unauthorized persons. All workforce members are responsible for reporting an incident of unauthorized visitor and/or unauthorized access to DNA Genotek’s facility.</p>
 
-<p>Of note, DNA Genotek does not have ready access to ePHI, it provides cloud-based, compliant infrastructure to covered entities and business associates. DNA Genotek does not physically house any systems used by its Platform in DNA Genotek facilities. Physical security of our Platform servers is outlined <a href="http://broadcast.rackspace.com/downloads/pdfs/RackspaceSecurityApproach.pdf">here</a>.</p>
+<p>Of note, DNA Genotek does not have ready access to ePHI; it provides cloud-based, compliant software to covered entities and business associates. DNA Genotek does not physically house any systems used by its Platform in DNA Genotek facilities. Physical security of our Platform servers is outlined <a href="https://www.hivelocity.net/">here</a>.</p>
 
 <h2 id="applicable-standards-from-the-hitrust-common-security-framework">Applicable Standards from the HITRUST Common Security Framework</h2>
 
@@ -1445,7 +1079,7 @@ B. Available storage space.</li>
 <li>Anonymously through workforce members desired channels.</li>
 <li>The individual receiving the report facilitates completion of an <a href="./incident.form.pdf">Incident Identification form</a> and notifies the Security Officer (if not already done).</li>
 <li>The Security Officer determines if the issue is a Precursor, Event, Indication, or Incident.</li>
-<li>If the issue is an event, indication, or precursor the Security Officer forwards it to the appropriate resource for resolution.
+<li>If the issue is an Event, Indication, or Precursor the Security Officer forwards it to the appropriate resource for resolution.
 
 <ol>
 <li>Non-Technical Event (minor infringement): the Security Officer completes a SIR Form (see Appendix 2) and investigates the incident.</li>
@@ -1568,7 +1202,7 @@ B. Available storage space.</li>
 <li>Security Officer</li>
 <li>Privacy Officer</li>
 <li>Senior Management</li>
-<li>VP of Engineering</li>
+<li>Director of IT</li>
 </ul>
 
           <h1 id="breach-policy">Breach Policy</h1>
@@ -1686,10 +1320,7 @@ E. Contact procedures for individuals to ask questions or learn additional infor
 
 <p>Sincerely,</p>
 
-<p>Travis Good, MD
-Co-founder - DNA Genotek Inc.
-travis@datica.com
-303-351-2640</p>
+<p><strong><em>TODO</em></strong></p>
 
           <h1 id="disaster-recovery-policy">Disaster Recovery Policy</h1>
 
@@ -1751,7 +1382,7 @@ travis@datica.com
 
 <h2 id="line-of-succession">Line of Succession</h2>
 
-<p>The following order of succession to ensure that decision-making authority for the DNA Genotek Contingency Plan is uninterrupted. The Chief Technology Officer (CTO) and Security Officer, Adam Leko, are responsible for ensuring the safety of personnel and the execution of procedures documented within this DNA Genotek Contingency Plan. If the CTO and VP of Engineering are unable to function as the overall authority or chooses to delegate this responsibility to a successor, the CEO or CPO shall function as that authority. To provide contact initiation should the contingency plan need to be initiated, please use the contact list below.</p>
+<p>The following order of succession to ensure that decision-making authority for the DNA Genotek Contingency Plan is uninterrupted. The Chief Technology Officer (CTO) and Security Officer, Adam Leko, are responsible for ensuring the safety of personnel and the execution of procedures documented within this DNA Genotek Contingency Plan. If the CTO and Director of IT are unable to function as the overall authority or chooses to delegate this responsibility to a successor, the CEO or CPO shall function as that authority. To provide contact initiation should the contingency plan need to be initiated, please use the contact list below.</p>
 
 <ul>
 <li>Adam Leko, CTO: 414-335-0253, adam@datica.com</li>
@@ -1764,13 +1395,13 @@ travis@datica.com
 <p>The following teams have been developed and trained to respond to a contingency event affecting the IT system.</p>
 
 <ol>
-<li>The <strong>Ops Team</strong> is responsible for recovery of the DNA Genotek hosted environment, network devices, and all servers. Members of the team include personnel who are also responsible for the daily operations and maintenance of DNA Genotek. The team leader is the VP of Engineering and directs the Dev Ops Team.</li>
+<li>The <strong>Ops Team</strong> is responsible for recovery of the DNA Genotek hosted environment, network devices, and all servers. Members of the team include personnel who are also responsible for the daily operations and maintenance of DNA Genotek. The team leader is the Director of IT and directs the Dev Ops Team.</li>
 <li>The <strong>Web Services Team</strong> is responsible for assuring all application servers, web services, and platform add-ons are working. It is also responsible for testing redeployments and assessing damage to the environment. The team leader is the CTO and directs the Web Services Team.</li>
 </ol>
 
 <h2 id="testing-and-maintenance">Testing and Maintenance</h2>
 
-<p>The CTO and VP of Engineering shall establish criteria for validation/testing of a Contingency Plan, an annual test schedule, and ensure implementation of the test. This process will also serve as training for personnel involved in the plan’s execution. At a minimum the Contingency Plan shall be tested annually (within 365 days). The types of validation/testing exercises include tabletop and technical testing. Contingency Plans for all application systems must be tested at a minimum using the tabletop testing process. However, if the application system Contingency Plan is included in the technical testing of their respective support systems that technical test will satisfy the annual requirement.</p>
+<p>The CTO and Director of IT shall establish criteria for validation/testing of a Contingency Plan, an annual test schedule, and ensure implementation of the test. This process will also serve as training for personnel involved in the plan’s execution. At a minimum the Contingency Plan shall be tested annually (within 365 days). The types of validation/testing exercises include tabletop and technical testing. Contingency Plans for all application systems must be tested at a minimum using the tabletop testing process. However, if the application system Contingency Plan is included in the technical testing of their respective support systems that technical test will satisfy the annual requirement.</p>
 
 <h3 id="tabletop-testing">Tabletop Testing</h3>
 
@@ -1792,20 +1423,20 @@ travis@datica.com
 
 <h2 id="1-notification-and-activation-phase">1. Notification and Activation Phase</h2>
 
-<p>This phase addresses the initial actions taken to detect and assess damage inflicted by a disruption to DNA Genotek. Based on the assessment of the Event, sometimes according to the DNA Genotek Incident Response Policy, the Contingency Plan may be activated by either the CTO or VP of Engineering.</p>
+<p>This phase addresses the initial actions taken to detect and assess damage inflicted by a disruption to DNA Genotek. Based on the assessment of the Event, sometimes according to the DNA Genotek Incident Response Policy, the Contingency Plan may be activated by either the CTO or Director of IT.</p>
 
 <p>The notification sequence is listed below:</p>
 
 <ul>
 <li>The first responder is to notify the CTO. All known information must be relayed to the CTO.</li>
-<li>The VP of Engineering is to contact the Web Services Team and inform them of the event. The CTO is to to begin assessment procedures.</li>
+<li>The Director of IT is to contact the Web Services Team and inform them of the event. The CTO is to to begin assessment procedures.</li>
 <li>The CTO is to notify team members and direct them to complete the assessment procedures outlined below to determine the extent of damage and estimated recovery time. If damage assessment cannot be performed locally because of unsafe conditions, the CTO is to following the steps below.
 
 <ul>
 <li>Damage Assessment Procedures:</li>
-<li>The CTO and VP of Engineering are to logically assess damage, gain insight into whether the infrastructure is salvageable, and begin to formulate a plan for recovery.</li>
+<li>The CTO and Director of IT are to logically assess damage, gain insight into whether the infrastructure is salvageable, and begin to formulate a plan for recovery.</li>
 <li>Alternate Assessment Procedures:</li>
-<li>Upon notification from the CTO, the VP of Engineering is to follow the procedures for damage assessment with combined Dev Ops and Web Services Teams.</li>
+<li>Upon notification from the CTO, the Director of IT is to follow the procedures for damage assessment with combined Dev Ops and Web Services Teams.</li>
 </ul></li>
 <li>The DNA Genotek Contingency Plan is to be activated if one or more of the following criteria are met:
 
@@ -1949,7 +1580,7 @@ travis@datica.com
 <h2 id="vulnerability-scanning-policy">Vulnerability Scanning Policy</h2>
 
 <ul>
-<li>Nessus management is performed by the DNA Genotek Security Officer with assistance from the VP of Engineering.</li>
+<li>Nessus management is performed by the DNA Genotek Security Officer with assistance from the Director of IT.</li>
 <li>Nessus is used to monitor all internal IP addresses (servers, VMs, etc) on DNA Genotek networks.</li>
 <li>Frequency of scanning is as follows:
 
@@ -1962,7 +1593,7 @@ travis@datica.com
 
 <ul>
 <li>All new vulnerabilities are verified manually to assure they are repeatable. Those not found to be repeatable are manually tested after the next vulnerability scan, regardless of if the specific vulnerability is discovered again.</li>
-<li>Vulnerabilities that are repeatable manually are documented and reviewed by the Security Officer, VP of Engineering, and Privacy Officer to see if they are part of the current risk assessment performed by DNA Genotek.
+<li>Vulnerabilities that are repeatable manually are documented and reviewed by the Security Officer, Director of IT, and Privacy Officer to see if they are part of the current risk assessment performed by DNA Genotek.
 
 <ul>
 <li>Those that are a part of the current risk assessment are checked for mitigations.</li>
@@ -2037,7 +1668,7 @@ travis@datica.com
 <h3 id="production-system-security">Production System Security</h3>
 
 <ul>
-<li>System, network, and server security is managed and maintained by the VP of Engineering and the Security Officer.</li>
+<li>System, network, and server security is managed and maintained by the Director of IT and the Security Officer.</li>
 <li>Up to date system lists and architecture diagrams are kept for all Production environments.</li>
 <li>Access to Production Systems is controlled using centralized tools and two-factor authentication.</li>
 </ul>

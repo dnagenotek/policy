@@ -1,8 +1,8 @@
 # Data Management Policy
 
-Datica has procedures to create and maintain retrievable exact copies of electronic protected health information (ePHI) stored in conjunction with Datica Add-ons and for PaaS Customers utilizing our Backup Service. This policy, and associated procedures for testing and restoring from backup data, do not apply to PaaS Customers that do not choose Datica Backup Service. The policy and procedures will assure that complete, accurate, retrievable, and tested backups are available for all systems used by Datica.
+DNA Genotek has procedures to create and maintain retrievable exact copies of electronic protected health information (ePHI) stored in conjunction with DNA Genotek Add-ons and for PaaS Customers utilizing our Backup Service. This policy, and associated procedures for testing and restoring from backup data, do not apply to PaaS Customers that do not choose DNA Genotek Backup Service. The policy and procedures will assure that complete, accurate, retrievable, and tested backups are available for all systems used by DNA Genotek.
 
-Data backup is an important part of the day-to-day operations of Datica. To protect the confidentiality, integrity, and availability of ePHI, both for Datica and Datica Customers, completes backups are done daily to assure that data remains available when it needed and in case of disaster.
+Data backup is an important part of the day-to-day operations of DNA Genotek. To protect the confidentiality, integrity, and availability of ePHI, both for DNA Genotek and DNA Genotek Customers, completes backups are done daily to assure that data remains available when it needed and in case of disaster.
 
 Violation of this policy and its procedures by workforce members may result in corrective disciplinary action, up to and including termination of employment.
 
@@ -18,8 +18,8 @@ Violation of this policy and its procedures by workforce members may result in c
 
 ## Backup Policy and Procedures
 
-1. Perform daily snapshot backups of all systems that process, store, or transmit ePHI for Datica Customers, including PaaS Customers that utilize the Datica Backup Service
-2. Datica Ops Team, lead by VP of Engineering, is designated to be in charge of backups.
+1. Perform daily snapshot backups of all systems that process, store, or transmit ePHI for DNA Genotek Customers, including PaaS Customers that utilize the DNA Genotek Backup Service
+2. DNA Genotek Ops Team, lead by VP of Engineering, is designated to be in charge of backups.
 3. Dev Ops Team members are trained and assigned assigned to complete backups and manage the backup media.
 4. Document backups
 	* Name of the system

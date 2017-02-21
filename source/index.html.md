@@ -6,8 +6,6 @@ toc_footers:
 
 includes:
   - introduction
-  - hipaa_inheritance_for_paas_customers
-  - hipaa_inheritance_for_platform_addon_customers
   - policy_management_policy
   - risk_management_policy
   - roles_policy

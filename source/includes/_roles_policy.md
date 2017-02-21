@@ -27,12 +27,13 @@ The current DNA Genotek Privacy Officer is Travis Good ([travis@datica.com](mail
 
 ## Workforce Training Responsibilities
 
+***TODO***
 1. The Privacy Officer facilitates the training of all workforce members as follows:
 	1. New workforce members within their first month of employment;
 	2. Existing workforce members annually;
 	3. Existing workforce members whose functions are affected by a material change in the policies and procedures, within a month after the material change becomes effective;
 	4. Existing workforce members as needed due to changes in security and risk posture of DNA Genotek.
-
+***END TODO***
 2. The Security Officer or designee maintains documentation of the training session materials and attendees for a minimum of six years.
 
 3. The training session focuses on, but is not limited to, the following subjects defined in DNA Genotek's security policies and procedures:
@@ -53,7 +54,7 @@ The current DNA Genotek Privacy Officer is Travis Good ([travis@datica.com](mail
 	15. Requirements for users to create and change passwords;
 	16. Users must set all applications that contain or transmit ePHI to automatically log off after “X” minutes of inactivity;
 	17. Supervisors are required to report terminations of workforce members and other outside users;
-	18. Supervisors are required to report a change in a users title, role, department, and/or location;
+	18. Supervisors are required to report a change in a user's title, role, department, and/or location;
 	19. Procedures to backup ePHI;
 	20. Procedures to move and record movement of hardware and electronic media containing ePHI;
 	21. Procedures to dispose of discs, CDs, hard drives, and other media containing ePHI;
@@ -64,7 +65,7 @@ The current DNA Genotek Privacy Officer is Travis Good ([travis@datica.com](mail
 
 The Security Officer is responsible for facilitating the training and supervision of all workforce members [164.308(a)(3)(ii)(A) and 164.308(a)(5)(ii)(A)], investigation and sanctioning of any workforce member that is in violation of DNA Genotek security policies and non-compliance with the security regulations [164.308(a)(1)(ii)(c)], and writing, implementing, and maintaining all polices, procedures, and documentation related to efforts toward security and compliance [164.316(a-b)].
 
-The current DNA Genotek Security Officer is Adam Leko ([adam@datica.com](mailto:adam@datica.com)).
+The current DNA Genotek Security Officer is ***TODO***.
 
 ## Organizational Responsibilities
 
@@ -138,4 +139,3 @@ All workforce members report non-compliance of DNA Genotek’s policies and proc
 4. In the case of an insider threat, the Security Officer and Privacy Officer are to setup a team to investigate and mitigate the risk of insider malicious activity. DNA Genotek workforce members are encouraged to come forward with information about insider threats, and can do so anonymously.
 
 5. The Security Officer maintains all documentation of the investigation, sanctions provided, and actions taken to prevent reoccurrence for a minimum of six years after the conclusion of the investigation.
-

@@ -39,7 +39,7 @@ Production Systems that create, receive, store, or transmit customer data (herea
 
 ### Production System Security
 
-* System, network, and server security is managed and maintained by the VP of Engineering and the Security Officer.
+* System, network, and server security is managed and maintained by the Director of IT and the Security Officer.
 * Up to date system lists and architecture diagrams are kept for all Production environments.
 * Access to Production Systems is controlled using centralized tools and two-factor authentication.
 

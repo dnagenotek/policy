@@ -10,7 +10,7 @@ It is the policy of DNA Genotek to safeguard the confidentiality, integrity, and
 * Improper alteration or destruction of ePHI;
 * Out of date software and/or software known to have vulnerabilities.
 
-This policy applies to all DNA Genotek Add-on systems, including BaaS, that store, transmit, or process ePHI. This policy, and associated procedures, do not apply to PaaS Customers that do not choose DNA Genotek Logging Service.
+This policy applies to all DNA Genotek SaaS systems that store, transmit, or process ePHI.
 
 ## Applicable Standards from the HITRUST Common Security Framework
 
@@ -39,7 +39,7 @@ This policy applies to all DNA Genotek Add-on systems, including BaaS, that stor
 	* Assign the task of reviewing the audit reports to the workforce member responsible for the application, system, or network, the Privacy Officer, or any other individual determined to be appropriate for the task;
 	* Organize and provide oversight to a team structure charged with audit compliance activities (e.g., parameters, frequency, sample sizes, report formats, evaluation, follow-up, etc.).
 	* All connections to DNA Genotek are monitored. Access is limited to certain services, ports, and destinations. Exceptions to these rules, if created, are reviewed on an annual basis.
-2. DNA Genotek’s auditing processes shall address access and activity at the following levels listed below. In the case of PaaS Customers, Application and User level auditing is the responsibility of the Customer; DNA Genotek provides software to aggregate and view User and Application logs, but the log data collected is the responsibility of the PaaS Customer. Auditing processes may address date and time of each log-on attempt, date and time of each log-off attempt, devices used, functions performed, etc.
+2. DNA Genotek’s auditing processes shall address access and activity at the following levels listed below. Auditing processes may address date and time of each log-on attempt, date and time of each log-off attempt, devices used, functions performed, etc.
 	* User: User level audit trails generally monitor and log all commands directly initiated by the user, all identification and authentication attempts, and data and services accessed.
 	* Application: Application level audit trails generally monitor and log all user activities, including data accessed and modified and specific actions.
 	* System: System level audit trails generally monitor and log user activities, applications accessed, and other system defined specific actions. DNA Genotek utilizes file system monitoring from OSSEC to assure the integrity of file system data.
@@ -47,27 +47,25 @@ This policy applies to all DNA Genotek Add-on systems, including BaaS, that stor
 3. DNA Genotek shall log all incoming and outgoing traffic to into and out of its environment. This includes all successful and failed attempts at data access and editing. Data associated with this data will include origin, destination, time, and other relevant details that are available to DNA Genotek.
 4. DNA Genotek utilizes OSSEC to scan all systems for malicious and unauthorized software every 2 hours and at reboot of systems. Alerts from OSSEC are sent to Kibana, the centralized logging service that we use.
 5. DNA Genotek leverages process monitoring tools throughout its environment.
-6. DNA Genotek treats its Developer Portal as a Platform Add-on and, as such, it logs all activity associated with Developer Portal Access.
-7. DNA Genotek uses OSSEC to monitor the integrity of log files by utilizing OSSEC System Integrity Checking capabilities.
-8. DNA Genotek shall identify “trigger events” or criteria that raise awareness of questionable conditions of viewing of confidential information. The “events” may be applied to the entire DNA Genotek Platform or may be specific to a Customer, partner, business associate, Platform Add-on or application (See Listing of Potential Trigger Events below).
-9. In addition to trigger events, DNA Genotek utilizes OSSEC log correlation functionality to proactively identify and enable alerts based on log data.
-10. Logs are reviewed weekly by Security Officer.
-11. DNA Genotek’s Security Officer and Privacy Officer are authorized to select and use auditing tools that are designed to detect network vulnerabilities and intrusions. Such tools are explicitly prohibited by others, including Customers and Partners, without the explicit authorization of the Security Officer. These tools may include, but are not limited to:
+6. DNA Genotek uses OSSEC to monitor the integrity of log files by utilizing OSSEC System Integrity Checking capabilities.
+7. DNA Genotek shall identify “trigger events” or criteria that raise awareness of questionable conditions of viewing of confidential information. The “events” may be applied to the entire DNA Genotek Platform or may be specific to a Customer, partner, business associate, or application (See Listing of Potential Trigger Events below).
+8. In addition to trigger events, DNA Genotek utilizes OSSEC log correlation functionality to proactively identify and enable alerts based on log data.
+9. Logs are reviewed weekly by Security Officer.
+10. DNA Genotek’s Security Officer and Privacy Officer are authorized to select and use auditing tools that are designed to detect network vulnerabilities and intrusions. Such tools are explicitly prohibited by others, including Customers and Partners, without the explicit authorization of the Security Officer. These tools may include, but are not limited to:
 	* Scanning tools and devices;
 	* Password cracking utilities;
 	* Network “sniffers.”
 	* Passive and active intrusion detection systems.
-12. The process for review of audit logs, trails, and reports shall include:
+11. The process for review of audit logs, trails, and reports shall include:
 	* Description of the activity as well as rationale for performing the audit.
 	* Identification of which DNA Genotek workforce members will be responsible for review (workforce members shall not review audit logs that pertain to their own system activity).
 	* Frequency of the auditing process.
 	* Determination of significant events requiring further review and follow-up.
 	* Identification of appropriate reporting channels for audit results and required follow-up.
-13. Vulnerability testing software may be used to probe the network to identify what is running (e.g., operating system or product versions in place), whether publicly-known vulnerabilities have been corrected, and evaluate whether the system can withstand attacks aimed at circumventing security controls.
+12. Vulnerability testing software may be used to probe the network to identify what is running (e.g., operating system or product versions in place), whether publicly-known vulnerabilities have been corrected, and evaluate whether the system can withstand attacks aimed at circumventing security controls.
 	* Testing may be carried out internally or provided through an external third-party vendor. Whenever possible, a third party auditing vendor should not be providing the organization IT oversight services (e.g., vendors providing IT services should not be auditing their own services - separation of duties).
 	* Testing shall be done on a routine basis, currently monthly.
-14. Software patches and updates will be applied to all systems in a timely manner. In the case of routine updates, they will be applied after thorough testing. In the case of updates to correct known vulnerabilities, priority will be given to testing to speed the time to production. Critical security patches are applied within 30 days from testing and all security patches are applied within 90 days after testing.
-	* In the case of PaaS Customers, updates to Application and Database versions are the responsibility of Customers, though DNA Genotek will, at it's own discretion, notify and recommend updates to customer systems.
+13. Software patches and updates will be applied to all systems in a timely manner. In the case of routine updates, they will be applied after thorough testing. In the case of updates to correct known vulnerabilities, priority will be given to testing to speed the time to production. Critical security patches are applied within 30 days from testing and all security patches are applied within 90 days after testing.
 
 ## Audit Requests
 
@@ -99,12 +97,11 @@ This policy applies to all DNA Genotek Add-on systems, including BaaS, that stor
 4. Audit logs shall be protected from unauthorized access or modification, so the information they contain will be made available only if needed to evaluate a security incident or for routine audit activities as outlined in this policy.
 5. All audit logs are encrypted in transit and at rest to control access to the content of the logs.
 6. Audit logs shall be stored on a separate system to minimize the impact auditing may have on the privacy system and to prevent access to audit trails by those with system administrator privileges. This is done to apply the security principle of “separation of duties” to protect audit trails from hackers.
-7. For PaaS Customers choosing to use DNA Genotek logging services, log data will be separated from the log data of other DNA Genotek Customers.
 
 ## Workforce Training, Education, Awareness and Responsibilities
 
 1. DNA Genotek workforce members are provided training, education, and awareness on safeguarding the privacy and security of business and ePHI. DNA Genotek’s commitment to auditing access and activity of the information applications, systems, and networks is communicated through new employee orientation, ongoing training opportunities and events, and applicable policies. DNA Genotek workforce members are made aware of responsibilities with regard to privacy and security of information as well as applicable sanctions/corrective disciplinary actions should the auditing process detect a workforce member’s failure to comply with organizational policies.
-2. DNA Genotek Customers are provided with necessary information to understand DNA Genotek auditing capabilities, and PaaS Customers can choose the level of logging and auditing that DNA Genotek will implement on their behalf.
+2. DNA Genotek Customers are provided with necessary information to understand DNA Genotek auditing capabilities.
 
 ## External Audits of Information Access and Activity
 
@@ -123,7 +120,6 @@ A. Organizational history and experience.
 B. Available storage space.
 1. Reports summarizing audit activities shall be retained for a period of six years.
 3. Log data is currently retained and readily accessible for a 1-month period. Beyond that, log data is available via cold backup.
-4. For Paas Customers, they choose the length of backup retention and availability that DNA Genotek will implement and enforce.
 
 ## Potential Trigger Events
 

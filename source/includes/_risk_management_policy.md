@@ -17,7 +17,7 @@ This policy establishes the scope, objectives, and procedures of DNA Genotek's i
 
 ## Risk Management Policies
 
-1. It is the policy of DNA Genotek to conduct thorough and timely risk assessments of the potential threats and vulnerabilities to the confidentiality, integrity, and availability of electronic protected health information (ePHI) (and other confidential and proprietary electronic information) it stores, transmits, and/or processes for its Customers and to develop strategies to efficiently and effectively mitigate the risks identified in the assessment process as an integral part of the DNA Genotek's information security program.
+1. It is the policy of DNA Genotek to conduct thorough and timely risk assessments of the potential threats and vulnerabilities to the confidentiality, integrity, and availability of electronic protected health information (ePHI) (and other confidential and proprietary electronic information) it stores, transmits, and/or processes for its Customers and to develop strategies to efficiently and effectively mitigate the risks identified in the assessment process as an integral part of DNA Genotek's information security program.
 2. Risk analysis and risk management are recognized as important components of DNA Genotek’s corporate compliance program and information security program in accordance with the Risk Analysis and Risk Management implementation specifications within the Security Management standard and the evaluation standards set forth in the HIPAA Security Rule, 45 CFR 164.308(a)(1)(ii)(A), 164.308(a)(1)(ii)(B), 164.308(a)(1)(i), and 164.308(a)(8).
 	1. Risk assessments are done throughout product life cycles:
 	2. Before the integration of new system technologies and before changes are made to DNA Genotek physical safeguards; and
@@ -126,4 +126,3 @@ This policy establishes the scope, objectives, and procedures of DNA Genotek's i
 ## Process Documentation
 
 Maintain documentation of all risk assessment, risk management, and risk mitigation efforts for a minimum of six years.
-

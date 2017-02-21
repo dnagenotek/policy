@@ -31,10 +31,10 @@ Access to DNA Genotek systems and application is limited for all users, includin
 
 ## Access Establishment and Modification
 
-* Requests for access to DNA Genotek Platform systems and applications is made formally to the VP of Engineering, Privacy Officer, or Security Officer.
+* Requests for access to DNA Genotek Platform systems and applications is made formally to the Director of IT, Privacy Officer, or Security Officer.
 * Access is not granted until receipt, review, and approval by the DNA Genotek Security Officer;
 * The request for access is retained for future reference.
-* All access to DNA Genotek systems and services are reviewed and updated on an bi-annual basis to assure proper authorizations are in place commensurate with job functions. The form used to conduct account review is [here](https://docs.google.com/a/catalyze.io/forms/d/1oeejMta4XLiUsdH2gTKQ-glec6DBiwPJoY9F60HmPWk/viewform).
+* All access to DNA Genotek systems and services are reviewed and updated on a bi-annual basis to assure proper authorizations are in place commensurate with job functions. The form used to conduct account review is [here](https://docs.google.com/a/catalyze.io/forms/d/1oeejMta4XLiUsdH2gTKQ-glec6DBiwPJoY9F60HmPWk/viewform).
 * Any DNA Genotek workforce member can request change of access using this [form](https://docs.google.com/a/catalyze.io/forms/d/1ySICzCyEEdNqxHHErjlJqREBijwxs9z72L-rWXrxkm0/viewform).
 * Access to systems is controlled using centralized user management and authentication. All authentication requests utilize two factor authentication using mobile devices as the second factor.
 * Temporary accounts are not used unless absolutely necessary for business purposes.
@@ -57,7 +57,7 @@ Access to DNA Genotek systems and application is limited for all users, includin
 
 ## Access Authorization
 
-* Role based access categories for each DNA Genotek system and application are pre-approved by the Security Officer or VP of Engineering.
+* Role based access categories for each DNA Genotek system and application are pre-approved by the Security Officer or Director of IT.
 * DNA Genotek utilizes hardware and software firewalls to segment data, prevent unauthorized access, and monitor traffic for denial of service attacks.
 
 ## Person or Entity Authentication
@@ -68,7 +68,7 @@ Access to DNA Genotek systems and application is limited for all users, includin
 ## Unique User Identification
 
 * Access to the DNA Genotek Platform systems and applications is controlled by requiring unique User Login ID’s and passwords for each individual user and developer.
-* Passwords requirements mandate strong password controls (see below).
+* Password requirements mandate strong password controls (see below).
 * Passwords are not displayed at any time and are not transmitted or stored in plain text.
 * Default accounts on all production systems, including root, are disabled.
 * Shared accounts are not allowed within DNA Genotek systems or networks.
@@ -81,7 +81,7 @@ Access to DNA Genotek systems and application is limited for all users, includin
 
 ## Employee Workstation Use
 
-All workstations at DNA Genotek are company owned, and all are laptop Apple products running Mac operating system.
+All workstations at DNA Genotek are company owned, and all are laptop Dell products running Windows operating system.
 
 * Workstations may not be used to engage in any activity that is illegal or is in violation of organization’s policies.
 * Access may not be used for transmitting, retrieving, or storage of any communications of a discriminatory or harassing nature or materials that are obscene or “X-rated”. Harassment of any kind is prohibited. No messages with derogatory or inflammatory remarks about an individual’s race, age, disability, religion, national origin, physical attributes, sexual preference, or health condition shall be transmitted or maintained. No abusive, hostile, profane, or offensive language is to be transmitted through organization’s system.
@@ -89,9 +89,8 @@ All workstations at DNA Genotek are company owned, and all are laptop Apple prod
 * Solicitation of non-company business, or any use of organization’s information systems/applications for personal gain is prohibited.
 * Transmitted messages may not contain material that criticizes organization, its providers, its employees, or others.
 * Users may not misrepresent, obscure, suppress, or replace another user’s identity in transmitted or stored messages.
-* Workstation hard drives will be encrypted using FileVault 2.0.
+* Workstation hard drives will be encrypted using ***TODO***.
 * All workstations have firewalls enabled to prevent unauthorized access unless explicitly granted.
-* All workstations are to have the following messages added to the lock screen and login screen: *This computer is owned by DNA Genotek, Inc. By logging in, unlocking, and/or using this computer you acknowledge you have seen, and follow, these policies (https://policy.datica.com) and have completed this training (https://training.datica.com/). Please contact us if you have problems with this - privacy@datica.com.*
 
 ## Wireless Access Use
 
@@ -100,9 +99,6 @@ All workstations at DNA Genotek are company owned, and all are laptop Apple prod
 * When access production systems via remote wireless connections, the same system access policies and procedures apply to wireless as all other connections, including wired.
 * Wireless networks managed within DNA Genotek non-production facilities (offices, etc) are secured with the following configurations:
 	* All data in transit over wireless is encrypted using WPA2 encryption;
-	* SSIDs are not broadcast;
-	* Passwords are rotated on a regular basis, presently quarterly. This process is managed by the DNA Genotek Security Officer.
-
 
 ## Employee Termination Procedures
 
@@ -116,7 +112,9 @@ All workstations at DNA Genotek are company owned, and all are laptop Apple prod
 
 ## Paper Records
 
+***TODO***
 DNA Genotek does not use paper records for any sensitive information. Use of paper for recording and storing sensitive data is against DNA Genotek policies.
+***END TODO***
 
 ## Password Management
 
@@ -130,12 +128,3 @@ DNA Genotek does not use paper records for any sensitive information. Use of pap
 * Upon initial login, users must change any passwords that were automatically generated for them.
 * All passwords used in configuration scripts are secured and encrypted.
 * If a user believes their user ID has been compromised, they are required to immediately report the incident to the Security Office.
-
-## PaaS Customer Access to Systems
-
-DNA Genotek grants PaaS customer secure system access via VPN connections. This access is only to Customer-specific systems, no other systems in the environment. These connections are setup at customer deployment. These connections are secured and encrypted and the only method for customers to connect to DNA Genotek hosted systems.
-
-In the case of data migration, DNA Genotek does, on a case by case basis, support customers in importing data. In these cases DNA Genotek support SCP assuring all data is secured and encrypted in transit.
-
-In the case of an investigation, DNA Genotek will assist customers, at DNA Genotek's discretion, and law enforcement in forensics.
-

@@ -89,8 +89,4 @@ We will assist you in remedying the situation.
 
 Sincerely,
 
-
-Travis Good, MD
-Co-founder - DNA Genotek Inc.
-travis@datica.com
-303-351-2640
+***TODO***
